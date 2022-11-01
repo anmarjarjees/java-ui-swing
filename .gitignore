@@ -3,6 +3,8 @@
 bin/
 lib/
 my-notes.txt
+user_interface_events/
+p3interface_events/
 
 # Compiled class file
 *.class

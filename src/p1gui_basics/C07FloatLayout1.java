@@ -1,10 +1,11 @@
-package user_interface_basics;
+package p1gui_basics;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 // We need to import the FlowLayout class from java.awt package
+// java.awt package => Abstract Window Toolkit
 import java.awt.FlowLayout;
 
 /* 

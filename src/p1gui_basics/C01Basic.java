@@ -1,4 +1,4 @@
-package user_interface_basics;
+package p1gui_basics;
 
 /* 
  * Using Swing Graphical User Interface (GUI) API "javax.swing"

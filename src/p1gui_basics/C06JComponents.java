@@ -1,4 +1,4 @@
-package user_interface_basics;
+package p1gui_basics;
 
 import javax.swing.*;
 
@@ -114,7 +114,19 @@ public class C06JComponents {
         String[] instruments = { "Guitar", "Keyboard", "Flute", "Bass", "Drums" };
 
         // Creating a JComboBox object:
-        JComboBox box = new JComboBox<String>(instruments);
+        /*
+         * Using the old/deprecated way!
+         * Compiler Warning:
+         * Warning: Serialized objects of this class will not be compatible with future
+         * Swing releases.
+         */
+        // JComboBox box = new JComboBox<String>(instruments);
+
+        // We can use the classical way:
+        // JComboBox<String> box = new JComboBox<String>(instruments);
+
+        // OR: the modern way
+        JComboBox<String> box = new JComboBox<>(instruments);
 
         /*
          * * The choice of "items" can be offered by the "JList" class.
@@ -124,7 +136,7 @@ public class C06JComponents {
          * JList is of type "Collections"
          * javax.swing.JComboBox.JComboBox<Object>()
          */
-        JList lst = new JList<String>(instruments);
+        JList<String> lst = new JList<>(instruments);
 
         // 2. Creating the panel(s) and adding the components
         JPanel pnl1 = new JPanel();

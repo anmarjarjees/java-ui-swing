@@ -1,16 +1,14 @@
-package user_interface_basics;
+package p1gui_basics;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 // We need to import the GridLayout class from java.awt package
 import java.awt.GridLayout;
-import java.awt.Container; // For changing the layout on the runtime
 
 /* 
- * Arranging The Components:
+ * Arranging The Components
  * - java.awt package (Abstract Window Toolkit) contains a number of layout manager classes
  * - These classes can be used to place components in a container if different ways
  * Link: https://docs.oracle.com/javase/7/docs/api/java/awt/package-summary.html
@@ -27,19 +25,19 @@ import java.awt.Container; // For changing the layout on the runtime
  * - arranging and resizing its components to fit in five   
  * - regions: north, south, east, west, and center.
  */
-public class C10GridLayout2 {
+public class C11BorderLayout {
         public static void main(String[] args) {
                 /*
                  * The top level JFrame object has "Content Pane"
                  * for placing components using the "BorderLayout" layout
                  * 
-                 * - FloatLayout class
+                 * - FloatLayout
                  * - BorderLayout class: place up to 5 JPanel
                  * - CardLayout class
                  * - BoxLayout class
                  */
 
-                JFrame frame = new JFrame("Working with GirdLayout");
+                JFrame frame = new JFrame("Working with BorderLayout");
                 frame.setSize(800, 200);
                 frame.setVisible(true);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -86,66 +84,27 @@ public class C10GridLayout2 {
                  */
 
                 // 4. Adding the JPanel object to the JFrame object
+                // frame.add(panel);
 
                 /*
                  * Layout the content
-                 * GridLayout
+                 * Border layouts
                  * Link:
-                 * https://docs.oracle.com/javase/7/docs/api/java/awt/GridLayout.html#:~:text=
-                 * The%20GridLayout%20class%20is%20a,is%20placed%20in%20each%20rectangle.
+                 * https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/
+                 * BorderLayout.html
                  * 
-                 * GridLayout() constructor:
-                 * Constructs a new grid layout with 3 X 3 and no gaps between components
+                 * BorderLayout() constructor:
+                 * Constructs a new border layout with no gaps between components.
+                 * 
                  */
                 GridLayout layout = new GridLayout(3, 3); // 3 X 3
 
+                // We don't need this line for setting the alignment,
+                // as it was set by the constructor
+                // layout.setAlignment(FlowLayout.LEFT);
+
                 mainPanel.setLayout(layout);
                 // 4. adding the mainPanel to the JFrame object
-                frame.add(mainPanel);
-
-                // Check:
-                /*
-                 * JOptionPane.showMessageDialog(null, "Modify Layout", "Layout Dialog Box", 1);
-                 */
-
-                /*
-                 * Working with Container Object method called "getContentPane()"
-                 */
-                // Link:
-                // https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFrame.html#getContentPane()
-
-                /*
-                 * Assign to the Container instance/object the result
-                 * of calling the JFrame method called ".getContentPane"
-                 * 
-                 * The Content Pane is where the GUI components are attached to the window
-                 * this method is basically tells the content page to re-layout itself
-                 * anytime the layout changes
-                 * 
-                 * So the object "container" refers to the
-                 * content pane of the JFrame
-                 * 
-                 */
-                Container container = frame.getContentPane();
-
-                /*
-                 * void setColumns(int cols)
-                 * Sets the number of columns in this layout to the specified value.
-                 * 
-                 * void setHgap(int hgap)
-                 * Sets the horizontal gap between components to the specified value.
-                 * 
-                 * void setRows(int rows)
-                 * Sets the number of rows in this layout to the specified value.
-                 * 
-                 * void setVgap(int vgap)
-                 * Sets the vertical gap between components to the specified value.
-                 */
-
-                // We have 6 buttons 2 columns x 3 rows
-                layout.setHgap(10);
-                layout.setVgap(15);
-                // Realign the placed GUI components
-                layout.layoutContainer(container);
+                frame.getContentPane().add(mainPanel);
         }
 }

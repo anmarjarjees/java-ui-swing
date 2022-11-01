@@ -1,4 +1,4 @@
-package user_interface_basics;
+package p1gui_basics;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

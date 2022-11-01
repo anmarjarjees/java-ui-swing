@@ -1,4 +1,4 @@
-package user_interface_basics;
+package p1gui_basics;
 
 // Importing all the classes from "javax.swing" package:
 import javax.swing.*;
