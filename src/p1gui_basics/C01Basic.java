@@ -9,7 +9,6 @@ package p1gui_basics;
  * This class is used to provide standard dialog boxes
  * JOptionPane is a component from Java Swing and it deals with dialog boxes especially
  *
- * 
  * Link: https://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html
  */
 
@@ -18,7 +17,6 @@ package p1gui_basics;
 import javax.swing.JOptionPane;
 
 // javax => the letter x is for Java eXtra, or Java eXtensions
-
 public class C01Basic {
         /*
          * With GUI applications

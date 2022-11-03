@@ -25,7 +25,7 @@ import java.awt.event.ItemListener;
  */
 import java.awt.event.ItemEvent;
 
-public class C3ItemEvent extends JFrame implements ItemListener {
+public class C5ItemEvent extends JFrame implements ItemListener {
     // Just declaring all the components to be used in the JFrame
     JPanel pnl = new JPanel();
 
@@ -49,8 +49,9 @@ public class C3ItemEvent extends JFrame implements ItemListener {
      */
     JTextArea txtArea = new JTextArea("Green Radio is selected", 5, 30);
 
-    public C3ItemEvent() {
-        super("Swing GUI with Event Quick Demo3");
+    // Class Constructor:
+    public C5ItemEvent() {
+        super("Swing with Item Events");
         setSize(500, 300);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -153,6 +154,6 @@ public class C3ItemEvent extends JFrame implements ItemListener {
     } // end "Event Handler" method: itemStateChanged()
 
     public static void main(String[] args) {
-        new C3ItemEvent();
+        new C5ItemEvent();
     }
 }

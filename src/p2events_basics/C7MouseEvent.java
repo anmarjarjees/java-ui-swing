@@ -41,7 +41,7 @@ import java.awt.event.MouseEvent;
  * We must declare all the associated Event-handler methods for both interfaces,
  * even if not all are actually used
  */
-public class C5MouseEvent extends JFrame implements MouseListener, MouseMotionListener {
+public class C7MouseEvent extends JFrame implements MouseListener, MouseMotionListener {
     // Just declaring all the components to be used in the JFrame:
     // Create JPanel container object:
     JPanel pnl = new JPanel();
@@ -53,8 +53,9 @@ public class C5MouseEvent extends JFrame implements MouseListener, MouseMotionLi
     // the coordinates:
     int x, y;
 
-    public C5MouseEvent() {
-        super("GUI Swing Window");
+    // Class Constructor:
+    public C7MouseEvent() {
+        super("Swing with Mouse Events");
         setSize(500, 400);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -144,7 +145,7 @@ public class C5MouseEvent extends JFrame implements MouseListener, MouseMotionLi
 
     // Adding the main() method as the entry point for our application:
     public static void main(String[] args) {
-        new C5MouseEvent();
+        new C7MouseEvent();
     } // end main()
 
 } // end class file

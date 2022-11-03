@@ -20,7 +20,7 @@ import java.awt.event.KeyListener;
  */
 import java.awt.event.KeyEvent;
 
-public class C4KeyboardEvent extends JFrame implements KeyListener {
+public class C6KeyboardEvent extends JFrame implements KeyListener {
     // Just declaring all the components to be used in the JFrame:
     // Create JPanel container object:
     JPanel pnl = new JPanel();
@@ -28,8 +28,9 @@ public class C4KeyboardEvent extends JFrame implements KeyListener {
     JTextField txtField = new JTextField(30);
     JTextArea txtArea = new JTextArea(5, 30);
 
-    public C4KeyboardEvent() {
-        super("GUI Swing Window");
+    // Class Constructor:
+    public C6KeyboardEvent() {
+        super("Swing with Keyboard Events");
         setSize(500, 200);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -130,7 +131,7 @@ public class C4KeyboardEvent extends JFrame implements KeyListener {
 
     // Adding the main() method as the entry point for our application:
     public static void main(String[] args) {
-        new C4KeyboardEvent();
+        new C6KeyboardEvent();
     } // end main()
 
 } // end class file
