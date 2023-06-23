@@ -67,6 +67,8 @@ public class C01Basic {
                  * if you put negative value => no icon will appear
                  * if you put invalid value => Runtime Error
                  */
+
+                // similar window.alert() in JS :-)
                 JOptionPane.showMessageDialog(null, "Welcome to the Standard Dialog Boxes Example!",
                                 "showMessageDialog() static method", 1);
 
@@ -101,5 +103,5 @@ public class C01Basic {
                  * The user must interact with that dialogue
                  * before the program will continue to the next statement
                  */
-        }
-}
+        } // main()
+} // class

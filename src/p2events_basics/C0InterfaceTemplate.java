@@ -45,6 +45,9 @@ public class C0InterfaceTemplate extends JFrame {
          * of the the "JFrame" class
          */
         super("GUI Swing Window");
+        // The other way of adding a title:
+        setTitle("GUI Swing Window");
+
         // instead of using the object "frame" => frame.setSize(500, 200);
         setSize(500, 200);
         // instead frame.setVisible(true);

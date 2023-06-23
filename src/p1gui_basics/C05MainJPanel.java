@@ -29,14 +29,18 @@ public class C05MainJPanel {
         // 3. Adding the panel to the frame if it's only one panel
         // frame.getContentPane().add(pnl2);!!!
         // But we have two
+
         // Creating one main panel to contain all the other panels
         JPanel mainPanel = new JPanel();
+
+        // Adding the two panels to the mainPanel
         mainPanel.add(pnl1);
         mainPanel.add(pnl2);
+
         frame.getContentPane().add(mainPanel);
         /*
          * Adding more User Interface Components
          * In the next class file... :-)
          */
-    }
-}
+    } // main()
+} // class

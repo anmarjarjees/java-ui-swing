@@ -31,7 +31,7 @@ import java.awt.Container; // For changing the layout on the runtime
  * CardLayout:	
  * A CardLayout object is a layout manager for a container.
  */
-public class C08FloatLayout2 {
+public class C08FlowLayout2 {
         public static void main(String[] args) {
                 /*
                  * The top level JFrame object has "Content Pane"

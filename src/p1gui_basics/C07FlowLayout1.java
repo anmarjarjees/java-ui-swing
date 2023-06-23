@@ -30,7 +30,7 @@ import java.awt.FlowLayout;
  * CardLayout:	
  * A CardLayout object is a layout manager for a container.
  */
-public class C07FloatLayout1 {
+public class C07FlowLayout1 {
     public static void main(String[] args) {
         /*
          * The top level JFrame object has "Content Pane"

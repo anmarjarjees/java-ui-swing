@@ -2,7 +2,6 @@ package p1gui_basics;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 // We need to import the GridLayout class from java.awt package
@@ -147,5 +146,5 @@ public class C10GridLayout2 {
                 layout.setVgap(15);
                 // Realign the placed GUI components
                 layout.layoutContainer(container);
-        }
-}
+        } // main()
+} // class

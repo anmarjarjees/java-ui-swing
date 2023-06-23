@@ -88,8 +88,7 @@ public class C09GridLayout1 {
                  * GridLayout divide the entire container window into equal chunks
                  * that are used for all the components
                  * Link:
-                 * https://docs.oracle.com/javase/7/docs/api/java/awt/GridLayout.html#:~:text=
-                 * The%20GridLayout%20class%20is%20a,is%20placed%20in%20each%20rectangle.
+                 * https://docs.oracle.com/javase/7/docs/api/java/awt/GridLayout.html
                  * 
                  * GridLayout() constructor:
                  * Constructs a new grid layout with 3 X 3 and no gaps between components
@@ -107,5 +106,5 @@ public class C09GridLayout1 {
 
                 // 4. adding the mainPanel to the JFrame object
                 frame.getContentPane().add(mainPanel);
-        }
-}
+        } // main()
+} // class

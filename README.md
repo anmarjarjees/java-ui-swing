@@ -17,8 +17,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
-
-
 # Working with GUI Application in Java:
 The Java Client consists of Java Deployment (Applets and Web Start) and Java UI (Swing, AWT and JavaFX) technologies.
 
@@ -173,5 +171,6 @@ btn.addActionListener(this);
 - [Package java.awt](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/package-summary.html)
 - [Package javax.swing](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/package-summary.html)
 - [Guru99 Java Tutorial](https://www.guru99.com/java-tutorial.html)
+- [Oracle - Trail: Creating a GUI With Swing](https://docs.oracle.com/javase/tutorial/uiswing/index.html)
 
 

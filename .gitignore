@@ -3,7 +3,8 @@
 bin/
 lib/
 my-notes.txt
-user_interface_events/
+
+# This folder to be added later:
 p3interface_events/
 
 # Compiled class file
